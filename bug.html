@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect way to add event listener in older browsers
+    document.getElementById('myDiv').attachEvent('onclick', function() {
+      alert('Div clicked!');
+    });
+  </script>
+</body>
+</html>
